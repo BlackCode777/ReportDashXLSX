@@ -1,0 +1,81 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+/* criar classe scss para criar um card responsivo para 3 tamanhos de telas (celular, tablete, computador), centralizado no centro da tela */
+.card-dash-board-report {
+    padding: 20px;
+    max-width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+
+    .card-dash-board-report-header{
+
+        .card-dash-board-report-header-title{
+            /* centralizar a classe no centro */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        ul{
+            .card-dash-board-report-header-menu{
+                margin-left: -40px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+
+                div{
+                    button{
+                        border: none;
+                        background-color: #0468e3;
+                        border-radius: 7px;
+                        
+                        /*borda com 2px de espessura e sólida*/
+                        border: 2px solid #aacefb;
+                        /* muda cor de fundo guando mouse estiver em cima  */
+                        &:hover{
+                            background-color: #406188;
+                            border: 2px solid #fbc6aa;
+                        }
+
+                        padding: 15px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #ffffff;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }  
+}
+
+/*
+
+max-width: 40%;
+height: 100%;
+margin: 0 auto;
+margin-top: 10%;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+*/
